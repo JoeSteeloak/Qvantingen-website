@@ -21,6 +21,21 @@ header {
 
 }
 
+footer {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    padding: 1%;
+    background-color: #EAD7BB;
+    border-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-color: black;
+    z-index: -1;
+}
+
 /*Large screen size*/
 @media screen and (min-width: 1024px) {
     #logo_small {
