@@ -1,0 +1,47 @@
+/* nollställ marginaller och padding för att ge mig mer kontroll över dem*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    background-color: #EAD7BB;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.logo {
+    margin: auto;
+    display: block;
+    max-block-size: 100%;
+    padding: 20px;
+
+}
+
+/*Large screen size*/
+@media screen and (min-width: 1024px) {
+    #logo_small {
+        display: none;
+    }
+}
+
+/*Medium screen size*/
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+    #logo_small {
+        display: none;
+    }
+}
+
+/* small screen size*/
+@media (max-width: 600px) {
+    #logo_large {
+        display: none;
+    }
+
+    #logo_small {
+        display: block;
+    }
+}
