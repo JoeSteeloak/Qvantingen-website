@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    
+
 }
 
 header {
@@ -11,6 +11,8 @@ header {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
 
 }
 
@@ -37,8 +39,15 @@ footer {
     z-index: -1;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid black;
+}
+
+li > a {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;    
 }
 
 /*Large screen size*/
@@ -63,5 +72,22 @@ table, th, td {
 
     #logo_small {
         display: block;
+    }
+
+    a {
+        text-decoration: none;
+        
+       
+    }
+    li {
+        margin-top: 10px;
+        list-style-type: none;
+        
+    }
+    nav>ul {
+        width: 75%;
+        padding: 15px;
+        margin: 0px auto 0px auto;
+        text-align: center;
     }
 }
