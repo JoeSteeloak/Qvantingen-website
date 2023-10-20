@@ -5,6 +5,22 @@
 
 }
 
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5%;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 5%;
+    line-height: 150%;
+}
+
+img {
+    max-width: 100%;
+}
+
 header {
 
     background-color: #EAD7BB;
@@ -25,7 +41,7 @@ header {
 }
 
 footer {
-    position: fixed;
+    position: block;
     bottom: 0%;
     width: 100%;
     padding: 1%;
@@ -39,11 +55,41 @@ footer {
     z-index: -1;
 }
 
-table,
+/* Till schematabellen */
+
+
+table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 th,
 td {
-    border: 1px solid black;
+   
 }
+
+th {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 90%;
+    border-bottom: 2px solid #111111;
+    border-top: 1px solid #999;
+    text-align: left;
+}
+
+tr.even {
+    background-color: #efefef;
+}
+
+tr:hover {
+    background-color: #ebce8f;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
 
 li > a {
     font-family: 'Courier New', Courier, monospace;
