@@ -5,11 +5,14 @@
 
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 5%;
 }
+
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -56,18 +59,12 @@ footer {
 }
 
 /* Till schematabellen */
-
-
 table {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-th,
-td {
-   
-}
 
 th {
     text-transform: uppercase;
@@ -91,9 +88,9 @@ tfoot {
 }
 
 
-li > a {
+li>a {
     font-family: 'Courier New', Courier, monospace;
-    color: black;    
+    color: black;
 }
 
 /*Large screen size*/
@@ -122,18 +119,47 @@ li > a {
 
     a {
         text-decoration: none;
-        
-       
+
+
     }
+
     li {
         margin-top: 10px;
         list-style-type: none;
-        
+
     }
+
     nav>ul {
         width: 75%;
         padding: 15px;
         margin: 0px auto 0px auto;
         text-align: center;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        
+    }
+    .grid-item-1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .grid-item-2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .grid-item-3 {
+        grid-row-start: 2;
+    }
+    .grid-item-4 {
+        grid-row-start: 2;
+    }
+    .grid-item-5 {
+        grid-row-start: 3;
+    }
+    .grid-item {
+        justify-self: center;
     }
 }
