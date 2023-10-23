@@ -64,6 +64,7 @@ table {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
 }
 
 
@@ -93,6 +94,24 @@ li>a {
     font-family: 'Courier New', Courier, monospace;
     color: black;
 }
+
+/* till Contact-sidan, designar formuläret */
+
+.contact {
+    padding: 3%;
+    margin: auto;
+}
+
+.contactForm {
+    margin: 10%;
+    padding-bottom: 10%;
+    width: 90%;
+    margin: auto;
+}
+
+
+
+
 
 /*Large screen size*/
 @media screen and (min-width: 1024px) {
