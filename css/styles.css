@@ -11,6 +11,7 @@ h3 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 5%;
+    color: #666363; 
 }
 
 p {
@@ -140,26 +141,46 @@ li>a {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        
+
     }
+
+    .grid-item {
+        border: solid 1px #111111;
+        padding: 0;
+        margin: 8%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
     .grid-item-1 {
         grid-column-start: 1;
         grid-column-end: 2;
     }
+
     .grid-item-2 {
         grid-column-start: 2;
         grid-column-end: 3;
     }
+
     .grid-item-3 {
         grid-row-start: 2;
     }
+
     .grid-item-4 {
         grid-row-start: 2;
     }
+
     .grid-item-5 {
         grid-row-start: 3;
     }
-    .grid-item {
-        justify-self: center;
+
+    .grid-item>a {
+        background-color: #666363;
+        color: whitesmoke;
+        font-size: larger;
     }
+
 }
