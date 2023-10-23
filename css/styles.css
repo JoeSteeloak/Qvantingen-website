@@ -2,7 +2,11 @@
 * {
     margin: 0;
     padding: 0;
+}
 
+.allButFooter {
+    /*fixa så att footern alltid är längst ner*/
+    min-height: calc(100vh - 40px);
 }
 
 h1,
@@ -11,7 +15,7 @@ h3 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 5%;
-    color: #666363; 
+    color: #666363;
 }
 
 p {
@@ -33,7 +37,6 @@ header {
     margin-right: 0;
     border-bottom-style: solid;
     border-bottom-width: 1px;
-
 }
 
 .logo {
@@ -41,12 +44,10 @@ header {
     display: block;
     max-block-size: 100%;
     padding: 20px;
-
 }
 
 footer {
-    position: block;
-    bottom: 0%;
+    display: block;
     width: 100%;
     padding: 1%;
     background-color: #EAD7BB;
@@ -89,34 +90,128 @@ tfoot {
     font-weight: bold;
 }
 
-
 li>a {
     font-family: 'Courier New', Courier, monospace;
     color: black;
 }
 
-/* till Contact-sidan, designar formuläret */
-
-.contact {
-    padding: 3%;
-    margin: auto;
+/* För att visa vilken sida man är på */
+.on {
+    background-color: #666363;
+    color: whitesmoke;
 }
-
-.contactForm {
-    margin: 10%;
-    padding-bottom: 10%;
-    width: 90%;
-    margin: auto;
-}
-
-
-
-
 
 /*Large screen size*/
 @media screen and (min-width: 1024px) {
     #logo_small {
         display: none;
+    }
+
+    p,
+    h1,
+    h2,
+    h3 {
+        padding: 1%;
+        width: 70%;
+        margin: auto;
+    }
+
+    main>img {
+        width: 70%;
+        display: block;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+    /* Till schematabellen */
+    table {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+    }
+
+    td {
+        padding: 1%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        margin-top: 10px;
+        list-style-type: none;
+        display: inline;
+        margin-left: 10%;
+    }
+
+    nav>ul {
+        width: 75%;
+        min-width: 1024px;
+        padding: 15px;
+        margin: 0px auto 0px auto;
+        text-align: center;
+    }
+
+    /* design för produktsidan*/
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .grid-item {
+        border: solid 1px #111111;
+        padding: 0;
+        margin: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-item-4 {
+        grid-row-start: 2;
+    }
+
+    .grid-item-5 {
+        grid-row-start: 2;
+    }
+
+    .grid-item>a {
+        background-color: #666363;
+        color: whitesmoke;
+        font-size: larger;
+    }
+
+    /*design för specifika produktsidor*/
+    figure {
+        border: 1px solid #111111;
+        width: 30%;
+        margin: 5% auto;
+        padding: 1%;
+
+    }
+
+    figcaption {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* till Contact-sidan, designar formuläret */
+    .contact {
+        padding: 3%;
+    }
+
+    .contactForm {
+
+        padding-bottom: 10%;
+        width: 60%;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .contact>p {
+        margin-left: 0;
     }
 }
 
@@ -125,7 +220,109 @@ li>a {
     #logo_small {
         display: none;
     }
+
+    p,
+    h1,
+    h2,
+    h3 {
+        padding: 1%;
+        width: 70%;
+        margin: auto;
+    }
+
+    main>img {
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+
+    /* Till schematabellen */
+    table {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        margin-top: 10px;
+        list-style-type: none;
+
+        margin-left: 10%;
+    }
+
+    nav>ul {
+        width: 75%;
+        padding: 15px;
+        margin: 0px auto 0px auto;
+        text-align: center;
+    }
+
+    /* design för produktsidan*/
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .grid-item {
+        border: solid 1px #111111;
+        padding: 0;
+        margin: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-item-4 {
+        grid-row-start: 2;
+    }
+
+    .grid-item-5 {
+        grid-row-start: 2;
+    }
+
+    .grid-item>a {
+        background-color: #666363;
+        color: whitesmoke;
+        font-size: larger;
+    }
+
+    /*design för specifika produktsidor*/
+    figure {
+        border: 1px solid #111111;
+        width: 30%;
+        margin: 5% auto;
+        padding: 1%;
+
+    }
+
+    figcaption {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* till Contact-sidan, designar formuläret */
+    .contact {
+        padding: 3%;
+    }
+
+    .contactForm {
+
+        padding-bottom: 10%;
+        width: 60%;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .contact>p {
+        margin-left: 0;
+    }
 }
+
 
 /* small screen size*/
 @media (max-width: 600px) {
@@ -139,14 +336,11 @@ li>a {
 
     a {
         text-decoration: none;
-
-
     }
 
     li {
         margin-top: 10px;
         list-style-type: none;
-
     }
 
     nav>ul {
@@ -155,6 +349,8 @@ li>a {
         margin: 0px auto 0px auto;
         text-align: center;
     }
+
+    /* design för produktsidan*/
 
     .grid-container {
         display: grid;
@@ -170,8 +366,6 @@ li>a {
         display: flex;
         align-items: center;
         justify-content: center;
-
-
     }
 
     .grid-item-1 {
@@ -200,6 +394,33 @@ li>a {
         background-color: #666363;
         color: whitesmoke;
         font-size: larger;
+    }
+
+    /*design för specifika produktsidor*/
+
+    figure {
+        border: 1px solid #111111;
+        width: 90%;
+        margin: 5% auto;
+        padding: 1%;
+    }
+
+    figcaption {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* till Contact-sidan, designar formuläret */
+
+    .contact {
+        padding: 3%;
+        margin: auto;
+    }
+
+    .contactForm {
+        margin: 10%;
+        padding-bottom: 10%;
+        width: 90%;
+        margin: auto;
     }
 
 }
