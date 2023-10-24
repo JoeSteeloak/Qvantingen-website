@@ -27,6 +27,11 @@ p {
 
 img {
     max-width: 100%;
+
+}
+
+.grid-item>img {
+    object-fit: fill;
 }
 
 header {
@@ -190,7 +195,6 @@ li>a {
         width: 30%;
         margin: 5% auto;
         padding: 1%;
-
     }
 
     figcaption {
@@ -298,6 +302,7 @@ li>a {
         width: 30%;
         margin: 5% auto;
         padding: 1%;
+        object-fit: fill;
 
     }
 
