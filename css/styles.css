@@ -73,6 +73,10 @@ table {
     margin-bottom: 100px;
 }
 
+th, td {
+    padding: 1%;
+  }
+
 
 th {
     text-transform: uppercase;
@@ -136,9 +140,7 @@ li>a {
         margin-bottom: 100px;
     }
 
-    td {
-        padding: 1%;
-    }
+    
 
     a {
         text-decoration: none;
@@ -221,6 +223,8 @@ li>a {
 
 /*Medium screen size*/
 @media screen and (min-width: 601px) and (max-width: 1023px) {
+
+    /* se till att rätt logga syns*/
     #logo_small {
         display: none;
     }
@@ -246,6 +250,10 @@ li>a {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 100px;
+    }
+
+    td {
+        padding: 1%;
     }
 
     a {
@@ -331,6 +339,8 @@ li>a {
 
 /* small screen size*/
 @media (max-width: 600px) {
+
+    /*ser till att rätt logga visas*/
     #logo_large {
         display: none;
     }
@@ -339,6 +349,7 @@ li>a {
         display: block;
     }
 
+    /* designa navbaren*/
     a {
         text-decoration: none;
     }
@@ -430,6 +441,11 @@ li>a {
 
     textarea {
         width: fit-content;
+    }
+
+    /* gör tabellen mer lättläst*/
+    td {
+        padding: 2%;
     }
 
 }
