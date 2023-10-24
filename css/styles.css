@@ -428,4 +428,8 @@ li>a {
         margin: auto;
     }
 
+    textarea {
+        width: fit-content;
+    }
+
 }
